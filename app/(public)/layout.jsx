@@ -27,9 +27,8 @@ const PublicLayout = ({children}) => {
     }, [])
 
   return (
-    //TODO PRATA OM STICKY ELLER INTE
     <div>
-        <div className='flex justify-between items-center max-sm:sticky top-0 left-0 bg-white border lg:border-none'>
+        <div className='flex justify-between items-center max-sm:sticky top-0 left-0 z-10 bg-white border lg:border-none'>
             <div className="m-5">
             <Link href={'/'}>
                 {landingpageImages[1] && <Image

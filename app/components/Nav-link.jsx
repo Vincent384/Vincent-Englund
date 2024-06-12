@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 export const Navlink = ({label,href}) => {
 
+
     const pathname = usePathname()
 
     const isActive = pathname === href

@@ -71,7 +71,8 @@ export const LandingPage = () => {
         <h2 className="text-lg">{title}</h2>
         }
         <div className='flex gap-2 items-center justify-center'>
-        <Button className='bg-white text-black border-2 rounded-full hover:bg-slate-200 transition-colors'>Download CV</Button>
+        <Button className='bg-white text-black border-2 rounded-full hover:bg-slate-500 transition-colors duration-500
+         hover:text-white'>Download CV</Button>
         <ContactInfo/>
         </div>
       </div> 

@@ -42,7 +42,7 @@ export const ProjectList = () => {
           <h2 className="m-2 text-lg text-center">{project.title}</h2>
           <p className="">{project.description.slice(0,50) + '...'}</p>
           <Link href={`/project/${project.id}`}>
-            <Button className='mt-3 container hover:opacity-60 transition-opacity'>View Project</Button>
+            <Button className='border border-slate-400 bg-slate-500 container mt-5 hover:bg-slate-400 transition-colors duration-500 hover:text-white'>View Project</Button>
           </Link>
         </div>
       ))}

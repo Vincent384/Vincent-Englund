@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "./components/Navbar";
+import { Toaster } from "react-hot-toast";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,7 @@ export default function RootLayout({ children }) {
       <header className='border-2 m-5 rounded-xl border-slate-600 bg-slate-50/10'>
           {/* <Navbar/> */}
         {children}
-          
+          <Toaster/>
       </header>
         </body>
     </html>

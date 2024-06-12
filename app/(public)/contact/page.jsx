@@ -3,33 +3,51 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import React, { useState } from 'react'
+import { validate } from './validate'
+import toast from 'react-hot-toast'
 
 const ContactPage = () => {
 
-    const [form, setForm] = useState([
-        {name:''},
-        {email:''},
-        {message:''}
-    ])
+    const [form, setForm] = useState({
+        name:'',
+        email:'',
+        message:'',
+    })
 
+const handleInputValue = (e) =>{
+    const { name, value } = e.target
+    setForm({
+        ...form,
+        [name]:value
+    })
+}
+
+const handleSubmit = (e) =>{
+    e.preventDefault()
+    const validationError = validate(form)
+    if (validationError) {
+        toast.error(validationError);
+        return;
+    }
+}
 
   return (
       <div className=''>
         <div className='mb-10'>
-            <h1 className='m-auto border-slate-400 text-center font-bold border-2 p-10 max-w-[500px]'>Send me a message</h1>
+            <h1 className='max-sm:w-[270px] lg: m-auto border-slate-400 text-center font-bold border-2 p-10 max-w-[500px]'>Send me a message</h1>
         </div>
         <div>
-            <form className='max-w-[500px] m-auto'>
+            <form onSubmit={handleSubmit} className='max-sm:w-[270px] max-w-[500px] m-auto'>
                 <div className='flex flex-col my-5'>
                     <label htmlFor="">Name</label>
-                    <Input className=' border border-slate-400'/>
+                    <Input name='name' value={form.name} onChange={handleInputValue} className=' border border-slate-400'/>
                 </div>
                 <div className='flex flex-col my-5'>
                     <label htmlFor="">Email</label>
-                    <Input className='border border-slate-400'/>
+                    <Input name='email' value={form.email} onChange={handleInputValue} className='border border-slate-400'/>
                 </div>
-                <Textarea className='resize-none border border-slate-400'/>
-                <Button variant='ghost' className='border border-slate-400 container mt-5 hover:bg-slate-400 transition-colors duration-500 hover:text-white'>Send Message</Button>
+                <Textarea name='message' value={form.message} onChange={handleInputValue} className='resize-none border border-slate-400'/>
+                <Button className='border border-slate-400 bg-slate-500 container mt-5 hover:bg-slate-400 transition-colors duration-500 hover:text-white'>Send Message</Button>
             </form>
         </div>
     </div>
