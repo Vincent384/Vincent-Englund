@@ -3,6 +3,7 @@ import { Navbar } from '@/app/components/Navbar'
 import { ProjectList } from '@/app/components/ProjectLists'
 import { db } from '@/firebase.confg'
 import { doc, getDoc } from 'firebase/firestore'
+import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 
 const Projects = () => {

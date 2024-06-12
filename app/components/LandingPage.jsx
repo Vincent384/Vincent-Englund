@@ -10,7 +10,8 @@ import { ContactInfo } from './ContactInfo'
 export const LandingPage = () => {
   const [landingpageImages, setLandingpageImages] = useState([])
   const [title, setTitle] = useState('')
-
+  const [cvUrl, setCvUrl] = useState('');
+console.log(cvUrl)
   useEffect(() => {
     const getImages = async () => {
       try {
@@ -44,7 +45,26 @@ export const LandingPage = () => {
     }
 
     getTitle()
+    
   }, [])
+
+  useEffect(() => {
+    const fetchCvUrl = async () => {
+      try {
+        const docRef = doc(db, 'Cv', '8jVRlclPx9dfRw3TQSsw')
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          setCvUrl(docSnap.data().pdf);
+        } else {
+          console.log('No such document!');
+        }
+      } catch (error) {
+        console.error('Error fetching CV URL:', error);
+      }
+    };
+
+    fetchCvUrl();
+  }, []);
 
 
   return (
@@ -71,8 +91,12 @@ export const LandingPage = () => {
         <h2 className="text-lg">{title}</h2>
         }
         <div className='flex gap-2 items-center justify-center'>
-        <Button className='bg-white text-black border-2 rounded-full hover:bg-slate-500 transition-colors duration-500
-         hover:text-white'>Download CV</Button>
+        {cvUrl && (
+                <a href={cvUrl} target='_blank' rel="noopener noreferrer"  download="CV.pdf">
+              <Button className='bg-white text-black border-2 rounded-full hover:bg-slate-500 transition-colors duration-500 hover:text-white'>
+              Download Cv</Button>
+                </a>
+            )}
         <ContactInfo/>
         </div>
       </div> 

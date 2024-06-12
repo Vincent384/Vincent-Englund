@@ -37,10 +37,11 @@ export const Navlinks = () => {
                     <Navlink className='' key={i} href={link.href} label={link.label} />
                 ))} */}
                 {
-                    <button onClick={toggleMenu}>
+                    <div>
+                  
                         {isOpen ?
                         <DropdownMenu>
-                        <DropdownMenuTrigger><Menu /></DropdownMenuTrigger>
+                        <DropdownMenuTrigger><Menu onClick={toggleMenu} /></DropdownMenuTrigger>
                         <DropdownMenuContent className='flex flex-col items-center'>
                         {NAV_LINKS.map((link, i) => (
                     <Navlink className='' key={i} href={link.href} label={link.label} />
@@ -49,14 +50,15 @@ export const Navlinks = () => {
                       </DropdownMenu>
                       
                         :           <DropdownMenu>
-                        <DropdownMenuTrigger><Menu /></DropdownMenuTrigger>
+                        <DropdownMenuTrigger><Menu onClick={toggleMenu} /></DropdownMenuTrigger>
                         <DropdownMenuContent className='flex flex-col items-center'>
                         {NAV_LINKS.map((link, i) => (
                     <Navlink className='' key={i} href={link.href} label={link.label} />
                 ))}
                         </DropdownMenuContent>
                       </DropdownMenu>}
-                    </button>
+                  
+                    </div>
                 }
             </div>
             <div className='max-md:flex gap-4 hidden'>
