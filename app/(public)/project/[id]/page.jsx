@@ -59,6 +59,7 @@ const ProjectDetailPage = () => {
                   src={image}
                   width={200}
                   height={200}
+                  quality={100} 
                   alt={singleProject.title}/></CarouselItem>
                 })
                 

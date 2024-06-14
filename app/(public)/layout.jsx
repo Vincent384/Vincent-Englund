@@ -36,6 +36,7 @@ const PublicLayout = ({children}) => {
                 src={landingpageImages[1]}
                 width={150}
                 height={150}
+                quality={100} 
                 alt="landing page"
                 priority
                 />}

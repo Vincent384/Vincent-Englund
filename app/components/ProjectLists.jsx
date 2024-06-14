@@ -35,6 +35,7 @@ export const ProjectList = () => {
             src={project.Images[0]}
             width={200}
             height={200}
+            quality={100} 
             alt={project.title}
           />
           </Link>
