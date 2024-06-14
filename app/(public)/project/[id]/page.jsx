@@ -55,10 +55,11 @@ const ProjectDetailPage = () => {
               <CarouselContent>
                 { singleProject && singleProject.Images.map((image,i)=>{
                   return <CarouselItem className='w-full aspect-video' key={i}><Image
-                  className='w-full h-full object-cover'
+                  className='w-full h-full aspect-video'
                   src={image}
-                  width={200}
-                  height={200}
+                  layout='responsive'
+                  width={1920}
+                  height={1080}
                   quality={100} 
                   alt={singleProject.title}/></CarouselItem>
                 })

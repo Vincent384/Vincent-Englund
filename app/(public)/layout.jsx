@@ -29,13 +29,13 @@ const PublicLayout = ({children}) => {
   return (
     <div>
         <div className='flex justify-between items-center max-sm:sticky top-0 left-0 z-10 bg-white border lg:border-none'>
-            <div className="m-5">
+            <div className="max-sm:w-[100px] w-[150px] aspect-video m-5">
             <Link href={'/'}>
                 {landingpageImages[1] && <Image
-                className="10"
+                className="w-full 10"
                 src={landingpageImages[1]}
-                width={150}
-                height={150}
+                width={943}
+                height={975}
                 quality={100} 
                 alt="landing page"
                 priority

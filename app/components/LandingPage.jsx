@@ -76,8 +76,8 @@ console.log(cvUrl)
               <Image
                 className="w-full"
                 src={landingpageImages[0]}
-                width={300}
-                height={300}
+                width={381}
+                height={344}
                 alt="landing page"
                 priority
               />
