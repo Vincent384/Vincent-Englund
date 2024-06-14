@@ -30,12 +30,12 @@ const [aboutText, setAboutText] = useState([])
             {
                 aboutText && aboutText.map((item,i)=>(
                     
-                   <div key={i} className='grid max-sm:grid-cols-1 lg: grid-cols-2 text-center m-2 gap-2'>
+                   <div key={i} className='grid max-sm:grid-cols-1 lg: grid-cols-2 text-center m-10 gap-10'>
                  
-                <div className='max-sm:mb-5'>
+                <div className='max-sm:mb-5 border-2 border-slate-300 p-10 text-center rounded-xl'>
                     <p>{item.text}</p>
                 </div>
-                <div className=''>
+                <div className='border-2 border-slate-300 p-10 text-center rounded-xl'>
                     <p>{item.text2}</p>
                 </div>
       

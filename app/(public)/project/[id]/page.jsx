@@ -48,7 +48,7 @@ const ProjectDetailPage = () => {
         <>
         <div className='grid text-center max-lg:row-start-2'>
           <h1 className='text-2xl'>{singleProject.title}</h1>
-          <p className='mt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo vitae mollitia error soluta temporibus deleniti totam commodi nesciunt eaqueLorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo vitae mollitia error soluta temporibus deleniti totam commodi nesciunt eaqueLorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo vitae mollitia error soluta temporibus deleniti totam commodi nesciunt eaque?</p>
+          <p className='mt-5 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo vitae mollitia error soluta temporibus deleniti totam commodi nesciunt eaqueLorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo vitae mollitia error soluta temporibus deleniti totam commodi nesciunt eaqueLorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo vitae mollitia error soluta temporibus deleniti totam commodi nesciunt eaque?</p>
         </div>
          <div className='border-2 border-slate-300 p-2'>
             <Carousel>
