@@ -28,11 +28,11 @@ const PublicLayout = ({children}) => {
 
   return (
     <div>
-        <div className='flex justify-between items-center max-sm:sticky top-0 left-0 z-10 bg-white border lg:border-none'>
+        <div className='flex justify-between items-center max-sm:sticky top-0 left-0 z-10 bg-white border lg:border rounded-t-lg'>
             <div className="max-sm:w-[100px] w-[150px] aspect-video m-5">
             <Link href={'/'}>
                 {landingpageImages[1] && <Image
-                className="w-full 10"
+                className="w-full object-contain"
                 src={landingpageImages[1]}
                 width={943}
                 height={975}

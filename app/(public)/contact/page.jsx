@@ -65,7 +65,7 @@ const handleSubmit = async (e) =>{
 
   return (
       <div className=''>
-        <div className='mb-10'>
+        <div className='my-10'>
             <h1 className='max-sm:w-[270px] lg: m-auto border-slate-400 text-center text-xl border-2 p-10 max-w-[500px]'>Send me a message</h1>
         </div>
         <div>
