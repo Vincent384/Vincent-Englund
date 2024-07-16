@@ -32,10 +32,10 @@ const [aboutText, setAboutText] = useState([])
                     
                    <div key={i} className='grid max-sm:grid-cols-1 lg: grid-cols-2 text-center m-10 gap-10'>
                  
-                <div className='max-sm:mb-5 border-2 border-slate-300 p-10 text-center rounded-xl'>
+                <div className='max-sm:mb-5 border-2 border-slate-300 p-10 text-center rounded-xl bg-gradient-to-r from-slate-50 via-slate-100 to-slate-200'>
                     <p>{item.text}</p>
                 </div>
-                <div className='border-2 border-slate-300 p-10 text-center rounded-xl'>
+                <div className='border-2 border-slate-300 p-10 text-center rounded-xl bg-gradient-to-r from-slate-50 via-slate-100 to-slate-200'>
                     <p>{item.text2}</p>
                 </div>
       

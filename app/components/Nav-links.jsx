@@ -33,9 +33,6 @@ export const Navlinks = () => {
                 ))}
             </div>
             <div className='max-sm:flex gap-4 hidden'>
-                {/* {NAV_LINKS.map((link, i) => (
-                    <Navlink className='' key={i} href={link.href} label={link.label} />
-                ))} */}
                 {
                     <div>
                   
@@ -60,19 +57,7 @@ export const Navlinks = () => {
                   
                     </div>
                 }
-            </div>
-            <div className='max-md:flex gap-4 hidden'>
-                {/* {NAV_LINKS.map((link, i) => (
-                    <Navlink className='' key={i} href={link.href} label={link.label} />
-                ))} */}
-                {/* {
-                    <button onClick={toggleMenu}>
-                        {isOpen ? <Menu /> : <Menu />}
-                    </button>
-                } */}
-            </div>
-        
-        
+            </div>       
         </>
     )
 }

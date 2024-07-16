@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header className='border-2 m-5 rounded-xl border-slate-600 bg-slate-50/10'>
-          {/* <Navbar/> */}
+      <header className=' bg-slate-50/10'>
+          
         {children}
           <Toaster/>
       </header>

@@ -68,7 +68,7 @@ console.log(cvUrl)
 
 
   return (
-    <div className="container mx-auto px-4">
+    <div className=" lg: mx-auto px-4 bg-gradient-to-l from-slate-50 via-slate-100 to-slate-200 ">
       <div className="flex flex-col md:flex-row md:justify-center items-center">
         <div className="flex w-full md:w-auto">
           {landingpageImages[0] && (
@@ -90,7 +90,7 @@ console.log(cvUrl)
           title && 
         <h2 className="text-lg">{title}</h2>
         }
-        <div className='flex gap-2 items-center justify-center'>
+        <div className='flex gap-2 items-center justify-center max-md:mb-10'>
         {cvUrl && (
                 <a href={cvUrl} target='_blank' rel="noopener noreferrer"  download="CV.pdf">
               <Button className='bg-white text-black border-2 rounded-full hover:bg-slate-500 transition-colors duration-500 hover:text-white'>
