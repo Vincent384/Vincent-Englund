@@ -28,7 +28,7 @@ const PublicLayout = ({children}) => {
 
   return (
     <div>
-        <div className='flex justify-between items-center max-sm:sticky top-0 left-0 z-10 bg-gradient-to-r from-blue-50 via-blue-100 to-blue-200 '>
+        <div className='flex justify-between items-center max-sm:sticky top-0 left-0 z-10 bg-gradient-to-r shadow-lg shadow-slate-400/70 from-slate-100 via-slate-200 to-slate-300 '>
             <div className="max-sm:w-[100px] w-[150px] aspect-video m-5">
             <Link href={'/'}>
                 {landingpageImages[1] && <Image

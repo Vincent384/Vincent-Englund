@@ -68,7 +68,7 @@ console.log(cvUrl)
 
 
   return (
-    <div className=" lg: mx-auto px-4 bg-gradient-to-l from-slate-300/80 via-slate-300 to-slate-400 ">
+    <div className=" lg: mx-auto px-4">
       <div className="flex flex-col md:flex-row md:justify-center items-center">
         <div className="flex w-full md:w-auto">
           {landingpageImages[0] && (
