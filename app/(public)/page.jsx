@@ -14,15 +14,15 @@ const Home =  () => {
     <Head>
 
 <title>Vincent Englund - Portfolio</title>
-<meta name="description" content="Utforska min portfölj och se vad jag, Vincent Englund, kan göra som webbutvecklare. Här kan du titta på mina projekt, mina färdigheter och mycket mer. Jag ser fram emot att dela min passion och mina erfarenheter med dig." />
-<meta name="keywords" content="Vincent Englund, portfolio, web developer, projects, skills" />
+<meta name="description" content="Utforska Vincents portfölj och upptäck hans skicklighet som webbutvecklare. Ta en titt på hans projekt, färdigheter och mycket mer för att se vad han kan erbjuda." />
+<meta name="keywords" content="Utforska Vincents portfölj och upptäck hans skicklighet som webbutvecklare. Ta en titt på hans projekt, färdigheter och mycket mer för att se vad han kan erbjuda." />
 <meta name="author" content="Vincent Englund" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta charSet="UTF-8" />
 
 
 <meta property="og:title" content="Vincent Englund - Portfolio" />
-<meta property="og:description" content="Utforska Vincentss portfölj och upptäck hans skicklighet som webbutvecklare. Ta en titt på hans projekt, färdigheter och mycket mer för att se vad han kan erbjuda." />
+<meta property="og:description" content="Utforska Vincents portfölj och upptäck hans skicklighet som webbutvecklare. Ta en titt på hans projekt, färdigheter och mycket mer för att se vad han kan erbjuda." />
 <meta property="og:type" content="website" />
 
 
