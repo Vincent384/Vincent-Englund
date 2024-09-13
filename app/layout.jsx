@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="sv">
       <body className={inter.className}>
       <header className=' bg-slate-50/10'>
           

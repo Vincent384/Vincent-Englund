@@ -20,9 +20,9 @@ export const Navlinks = () => {
     }
 
     const NAV_LINKS = [
-        { label: 'Home', href: '/' },
-        { label: 'Projects', href: '/projects' },
-        { label: 'Contact', href:'/contact'}
+        { label: 'Hem', href: '/' },
+        { label: 'Projekter', href: '/projects' },
+        { label: 'Kontakt', href:'/contact'}
     ]
 
     return (

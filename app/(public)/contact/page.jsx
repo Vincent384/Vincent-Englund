@@ -66,12 +66,12 @@ const handleSubmit = async (e) =>{
   return (
       <div className=''>
         <div className='my-10'>
-            <h1 className='max-sm:w-[270px] lg: m-auto border-slate-400 text-center text-xl border-2 p-10 max-w-[500px]'>Send me a message</h1>
+            <h1 className='max-sm:w-[270px] lg: m-auto border-slate-400 text-center text-xl border-2 p-10 max-w-[500px]'>Skicka mig ett meddelande</h1>
         </div>
         <div>
             <form onSubmit={handleSubmit} className='max-sm:w-[270px] max-w-[500px] m-auto'>
                 <div className='flex flex-col my-5'>
-                    <label htmlFor="">Name</label>
+                    <label htmlFor="">Namn</label>
                     <Input name='name' value={form.name} onChange={handleInputValue} className=' border border-slate-400'/>
                 </div>
                 <div className='flex flex-col my-5'>
@@ -79,7 +79,7 @@ const handleSubmit = async (e) =>{
                     <Input name='email' value={form.email} onChange={handleInputValue} className='border border-slate-400'/>
                 </div>
                 <Textarea name='message' value={form.message} onChange={handleInputValue} className='resize-none border border-slate-400'/>
-                <Button className='border border-slate-400 bg-slate-500 container mt-5 hover:bg-slate-400 transition-colors duration-500 hover:text-white'>Send Message</Button>
+                <Button className='border border-slate-400 bg-slate-500 container mt-5 hover:bg-slate-400 transition-colors duration-500 hover:text-white'>Skicka</Button>
             </form>
         </div>
     </div>

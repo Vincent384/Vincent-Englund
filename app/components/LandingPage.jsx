@@ -94,7 +94,7 @@ console.log(cvUrl)
         {cvUrl && (
                 <a href={cvUrl} target='_blank' rel="noopener noreferrer"  download="CV.pdf">
               <Button className='bg-white text-black border-2 rounded-full hover:bg-slate-500 transition-colors duration-500 hover:text-white'>
-              Ladda ned Cv</Button>
+              Ladda ner Cv</Button>
                 </a>
             )}
         <ContactInfo/>
