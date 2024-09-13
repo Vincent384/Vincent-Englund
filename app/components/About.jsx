@@ -25,7 +25,7 @@ const [aboutText, setAboutText] = useState([])
   return (
     <div className='my-10'>
             <div className='my-10 text-center'>
-                <h2 className='text-2xl font-bold'>About me</h2>
+                <h2 className='text-2xl font-bold'>Lite om mig</h2>
             </div>
             {
                 aboutText && aboutText.map((item,i)=>(

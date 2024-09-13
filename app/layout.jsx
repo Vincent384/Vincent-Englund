@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Vincent Englund",
-  description: "A professional portfolio website showcasing the projects and skills of Vincent Englund",
+  description: "Utforska Vincent Englunds portfölj för att få en inblick i hans projekt och kompetenser som webbutvecklare",
 };
 
 export default function RootLayout({ children }) {

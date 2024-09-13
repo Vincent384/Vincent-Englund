@@ -47,7 +47,7 @@ const [backendSkills, setBackendSkills] = useState([])
   
     <div className='text-center'>
        <div className='mt-10'>
-          <h2 className='text-2xl font-bold'>Experience</h2>
+          <h2 className='text-2xl font-bold'>Erfarenhet</h2>
        </div>
     </div>
     <div className='grid max-sm:grid-cols-1 grid-cols-2 m-10 gap-10'>
