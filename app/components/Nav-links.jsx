@@ -21,7 +21,7 @@ export const Navlinks = () => {
 
     const NAV_LINKS = [
         { label: 'Hem', href: '/' },
-        { label: 'Projekter', href: '/projects' },
+        { label: 'Mina projekt', href: '/projects' },
         { label: 'Kontakt', href:'/contact'}
     ]
 
