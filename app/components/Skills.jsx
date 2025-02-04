@@ -58,8 +58,11 @@ const [backendSkills, setBackendSkills] = useState([])
             <div className='grid max-sm:grid-cols-1 lg: grid-cols-2 mt-5'>
             {
               frontList.map((skill,i)=>(
-                <div key={i} className='flex items-center justify-center
-                     text-center mt-5 cursor-pointer'><span className='container'><BadgeCheck/></span><span className='font-bold container'>{skill}</span></div>
+                <div key={i} className='grid grid-cols-2 items-center 
+                     text-center mt-5 cursor-pointer'>
+                      <span className='container'><BadgeCheck/></span>
+                      <span className='font-bold container'>{skill}</span>
+                    </div>
               )
               )
             }
@@ -72,7 +75,9 @@ const [backendSkills, setBackendSkills] = useState([])
             <div className='grid max-sm:grid-cols-1 lg: grid-cols-2 mt-5'>
             {
               backendSkills.map((item,i)=>(
-                <div key={i} className='flex mt-5 justify-center items-center text-center'><span className='container'><BadgeCheck/></span><span className='font-bold container'>{item}</span></div>
+                <div key={i} className='grid grid-cols-2 mt-5 items-center text-center'>
+                  <span className='container'><BadgeCheck/></span>
+                  <span className='font-bold container'>{item}</span></div>
               )
               )
             }
