@@ -33,16 +33,17 @@ const handleSubmit = async (e) =>{
 
     try {
         const templateParams = {
-            from_name: form.name,
-            from_email: form.email,
+            name: form.name,
+            email: form.email,
             message: form.message,
+            to_email:'vincentmu3@hotmail.com'
         };
 
         const response = await emailjs.send(
             process.env.NEXT_PUBLIC_SERVICEID, // Replace with your EmailJS service ID
             process.env.NEXT_PUBLIC_TEMPLATEID, // Replace with your EmailJS template ID
             templateParams,
-            process.env.NEXT_PUBLIC_PRIVATE_KEY// Replace with your EmailJS user ID
+            process.env.NEXT_PUBLIC_PUBLIC_KEY// Replace with your EmailJS user ID
         );
 
         if (response.status === 200) {
